@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".AddProductActivity">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"/>
+    <ImageView
+        android:id="@+id/productimg"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/defaultproduct"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Title"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/productTitle_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Description"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/productDesc_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:maxLines="4"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Category"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prefered product cateogry to exchange "
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+
+<Button
+    android:id="@+id/Addproduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:textColor="#fff"
+    android:background="@color/colorPrimaryDark"/>
+
+</LinearLayout>
