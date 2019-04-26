@@ -9,6 +9,7 @@ public class Users {
     private String location;
     private boolean gender;
     private String profile_pic_id;
+    private String statue;
 
 
     public Users(String username, String userEmail, String userPassword, String location, boolean gender, String profile_pic_id) {
@@ -23,6 +24,14 @@ public class Users {
 
     public Users(){
 
+    }
+
+    public void setStatue(String statue) {
+        this.statue = statue;
+    }
+
+    public String getStatue() {
+        return statue;
     }
 
     public String getUserEmail() {

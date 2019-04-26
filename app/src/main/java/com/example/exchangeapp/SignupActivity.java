@@ -63,7 +63,6 @@ public class SignupActivity extends AppCompatActivity {
     private String name,Email,password,Reenterpass,Addresse;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference UserRef = database.getReference("Users");
-    DatabaseReference galleryRef = database.getReference("Gallery");
     private Spinner spinner1;
     String[] cities = new String[]{"Cairo", "Alexandria", "Giza","Port Said","Suez","Luxor","al-Mansura","El-Mahalla El-Kubra","Tanta","Asyut",
             "tIsmailia","Fayyum","Zagazig"," Aswan","Damietta","Damanhur","al-Minya","Beni Suef"," Qena","Sohag","Hurghada","6th of October City","Shibin El Kom",
@@ -199,6 +198,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private  void Go_to_main(){
         Intent signup_main=new Intent(SignupActivity.this,MainActivity.class);
+        signup_main.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(signup_main);
         finish();
     }

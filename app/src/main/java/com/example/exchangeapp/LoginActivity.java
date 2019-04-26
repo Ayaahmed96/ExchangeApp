@@ -74,15 +74,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser!=null){
-            GoHome();
-        }
 
-    }
     private boolean validate(){
         boolean valid=true;
         Email=login_email.getText().toString().trim();
@@ -111,6 +103,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void GoHome(){
         Intent login_main=new Intent(LoginActivity.this,MainActivity.class);
+        login_main.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(login_main);
         finish();
     }

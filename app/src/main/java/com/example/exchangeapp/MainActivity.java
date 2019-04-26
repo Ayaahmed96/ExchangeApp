@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
             GoAddProductPage();
 
         }
-        else if(item.getItemId()==R.id.settingstOption_Id){
+        else if(item.getItemId()==R.id.profileOption_id){
+            GoProfile();
 
         }
         else if(item.getItemId()==R.id.logoutOption_Id){
@@ -162,5 +163,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    private void GoProfile(){
+        Intent profile=new Intent(MainActivity.this,ProfileActivity.class);
+        startActivity(profile);
+        finish();
     }
 }

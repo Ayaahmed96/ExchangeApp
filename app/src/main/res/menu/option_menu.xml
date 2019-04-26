@@ -10,8 +10,8 @@
         android:title="Add new Product"
         app:showAsAction="never"></item>
     <item
-        android:id="@+id/settingstOption_Id"
-        android:title="Settings"
+        android:id="@+id/profileOption_id"
+        android:title="My profile"
         app:showAsAction="never"></item>
     <item
         android:id="@+id/logoutOption_Id"

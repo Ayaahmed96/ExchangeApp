@@ -10,10 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChatActivity">
-
-
-        </activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ChatActivity"></activity>
         <activity android:name=".ProductActivity" />
         <activity android:name=".AddProductActivity" />
         <activity android:name=".LoginActivity" />
@@ -24,7 +22,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
