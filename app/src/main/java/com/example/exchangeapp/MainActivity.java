@@ -51,10 +51,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
-        if(item.getItemId()==R.id.findfriendsOption_Id){
+
+        if(item.getItemId()==R.id.chatOption_Id){
+            goChatActivity();
 
         }
-        else if(item.getItemId()==R.id.addProductOption_Id){
+         else if(item.getItemId()==R.id.addProductOption_Id){
             GoAddProductPage();
 
         }
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             LogOut();
         }
         return true;
+
     }
 
     @Override
@@ -139,7 +142,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+private void goChatActivity(){
+        Intent chatintent=new Intent(MainActivity.this,ChatActivity.class);
+        startActivity(chatintent);
+        finish();
+}
 
     private void Search(){
         productRef.addValueEventListener(new ValueEventListener() {

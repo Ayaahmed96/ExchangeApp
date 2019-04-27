@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/findfriendsOption_Id"
-        android:title="Find Friends"
+        android:id="@+id/chatOption_Id"
+        android:title="Chats"
         app:showAsAction="never"></item>
     <item
         android:id="@+id/addProductOption_Id"
@@ -17,4 +18,5 @@
         android:id="@+id/logoutOption_Id"
         android:title="LogOut"
         app:showAsAction="never"></item>
+
 </menu>
